@@ -1,0 +1,2 @@
+endpoint: https://us1.prisma.sh/public-volcanofairy-209/mariadb/dev
+datamodel: datamodel.graphql

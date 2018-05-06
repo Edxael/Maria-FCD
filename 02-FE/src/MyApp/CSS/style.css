@@ -1,0 +1,72 @@
+body{
+    background-color: rgba(157, 131, 242, 0.719);
+    text-align: center;
+    padding: 1px 30px;
+}
+
+
+
+.TopBar{
+    color: rgba(156, 45, 247, 0.842);
+}
+
+
+.pagesCont{
+    background-color: rgba(254, 254, 254, 0.5);
+    border: 2px solid white;
+    padding: 0px 10%;
+}
+
+/* ===[  ]====================================== */
+
+
+
+
+
+
+
+.carusel-cont{
+    /* width: 95%; */
+    margin: 0px auto;
+}
+
+
+.pics1{
+    width: 500px;
+    height: auto;
+}
+
+
+
+.coding{
+    text-align: left
+}
+
+
+
+/* ===[ SERVICES ]====================================== */
+.sr-tab{
+    background-color: rgba(250, 255, 173, 0.356);
+    /* background-color: rgba(218, 173, 255, 0.356); */
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.tab-top{
+    text-align: center;
+}
+
+
+
+
+
+
+/* ===[ CONTACT US ]====================================== */
+
+.form-cont{
+    /* background-color: rgba(250, 255, 173, 0.356); */
+    background-color: rgba(218, 173, 255, 0.356);
+    border: 1px solid white;
+    width: 800px;
+    margin: 0px auto;
+}
