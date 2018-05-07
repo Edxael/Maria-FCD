@@ -11,3 +11,17 @@ https://www.npmjs.com/package/react-device-detect
 
 Article with info:
 https://www.vertical-leap.uk/blog/9-reasons-website-doesnt-work-mobile/
+
+
+
+
+
+
+=================================
+TO SEND EMAIL
+
+Nodemailer:
+https://nodemailer.com/about/
+
+
+

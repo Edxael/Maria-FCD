@@ -11,7 +11,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import AppBar from 'material-ui/AppBar'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
-import FlatButton from 'material-ui/FlatButton'
 
 
  
@@ -39,7 +38,7 @@ export default class extends React.Component{
                             <Drawer docked={false} width={200} open={this.state.open} onRequestChange={(open) => this.setState({open})} >
                                 <MenuItem primaryText="Home" containerElement={<Link to="/" />} onClick={ () => { this.setState({ open: false }) } } />
                                 <MenuItem primaryText="Services" containerElement={<Link to="/2" />} onClick={ () => { this.setState({ open: false }) } } />
-                                <MenuItem primaryText="Contac US" containerElement={<Link to="/3" />} onClick={ () => { this.setState({ open: false }) } } />
+                                <MenuItem primaryText="Contact US" containerElement={<Link to="/3" />} onClick={ () => { this.setState({ open: false }) } } />
                             </Drawer>
                     
                             
@@ -55,7 +54,8 @@ export default class extends React.Component{
     
                             
                             <hr/>
-                            <div>By: Fashion Cleaning Day.</div>
+                            <div>Manager: Maria Cardon.</div>
+                            <div>(801)-400-2547</div>
                     
                         </div>
                     </HashRouter>

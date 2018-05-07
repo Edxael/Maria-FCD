@@ -13,7 +13,6 @@ import P3 from './IMG/01-Home-Slider/03.jpg'
 import P4 from './IMG/01-Home-Slider/04.jpg'
 import P5 from './IMG/01-Home-Slider/05.jpg'
 import P6 from './IMG/01-Home-Slider/06.jpg'
-import index from 'react-slick';
  
 export default class extends React.Component{
     render(){ 

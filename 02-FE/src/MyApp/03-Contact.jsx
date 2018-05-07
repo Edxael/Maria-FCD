@@ -1,10 +1,10 @@
 import React from 'react'
-import TextField from 'material-ui/TextField'
+import gql from "graphql-tag"
+import { client } from './EndPoint/MyEndPoint'
 
-import AppBar from 'material-ui/AppBar';
-import IconButton from 'material-ui/IconButton';
-import NavigationClose from 'material-ui/svg-icons/navigation/close';
-import FlatButton from 'material-ui/FlatButton';
+
+import AppBar from 'material-ui/AppBar'
+import TextField from 'material-ui/TextField'
 import RaisedButton from 'material-ui/RaisedButton'
 
 import Banner from './IMG/03-Cx/cleaning.jpg'
@@ -15,7 +15,23 @@ export default class extends React.Component{
 
     render(){  
 
-        const senEmail = () => {
+        const senEmail = async () => {
+            console.log(this.state)
+
+            let temp1 = await client.mutate({
+                mutation: gql`
+                mutation{
+                    createUser(data: { name: "${this.state.name}", email: "${this.state.email}", phone: "${this.state.phone}" }){
+                      id
+                      name
+                      email
+                      phone
+                    }
+                  }
+                `}).then((result) => { return result.data.createUser } )
+            
+            await console.log("La Data: ", temp1 )
+
             this.setState({ name: '', email: '', phone: '' })
         }
 
@@ -26,15 +42,16 @@ export default class extends React.Component{
 
         return(
             <div>
-                <h1>Contac US</h1>
+                <h1>Contact US</h1>
                 <div style={bCont} >
                     <img style={banerSty} src={Banner} alt=""/>
                 </div>  
-                {/* <img src={Banner} alt=""/> */}
+        
                 <br/>
               
-                <h3>Free Estimates</h3>
-                <p><strong>Phone:</strong> 801-123-4567</p>
+                <h2>Free Estimates</h2>
+                <p><strong>Manager: </strong>Maria Cardon</p>
+                <p><strong>Phone:</strong> (801)400-2547</p>
                 <p><strong>Email:</strong> fashioncleaningday@gmail.com</p>
                 <br/>
 
