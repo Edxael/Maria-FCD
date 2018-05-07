@@ -63,10 +63,18 @@ body{
 
 /* ===[ CONTACT US ]====================================== */
 
+
 .form-cont{
     /* background-color: rgba(250, 255, 173, 0.356); */
     background-color: rgba(218, 173, 255, 0.356);
     border: 1px solid white;
-    width: 800px;
+    width: 80%;
     margin: 0px auto;
 }
+
+/* <div style={bCont} >
+    <img style={banerSty} src={PicMover} alt=""/>
+</div>  */
+
+
+

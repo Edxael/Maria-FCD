@@ -21,11 +21,16 @@ export default class extends React.Component{
 
 
         const myColor = { backgroundColor: "rgba(104, 81, 171, 0.842)" }
+        const bCont = { padding: "10px", maxWidth: "75%", margin: "0px auto" }
+        const banerSty = { margin: "0px auto", display: "block", width: "100%", height: "auto" }
 
         return(
             <div>
                 <h1>Contac US</h1>
-                <img src={Banner} alt=""/>
+                <div style={bCont} >
+                    <img style={banerSty} src={Banner} alt=""/>
+                </div>  
+                {/* <img src={Banner} alt=""/> */}
                 <br/>
               
                 <h3>Free Estimates</h3>
@@ -34,22 +39,24 @@ export default class extends React.Component{
                 <br/>
 
                 <div className="form-cont" >
-                    <AppBar  style={myColor}
-                        title={<span >Want to know more?</span>}
-                        showMenuIconButton={false}
-                    />
+                    <div style={banerSty}>
+                        <AppBar  style={myColor}
+                            title={<span >Want to know more?</span>}
+                            showMenuIconButton={false}
+                        />
 
-                    <TextField hintText="Name" floatingLabelText="Name" floatingLabelFixed={true} value={this.state.name} onChange={ (e) => { this.setState({ name: e.target.value }) } } />
-                    <br />
+                        <TextField hintText="Name" floatingLabelText="Name" floatingLabelFixed={true} value={this.state.name} onChange={ (e) => { this.setState({ name: e.target.value }) } } />
+                        <br />
 
-                    <TextField hintText="Email" floatingLabelText="Email" floatingLabelFixed={true} value={this.state.email} onChange={ (e) => { this.setState({ email: e.target.value }) } } />
-                    <br />
+                        <TextField hintText="Email" floatingLabelText="Email" floatingLabelFixed={true} value={this.state.email} onChange={ (e) => { this.setState({ email: e.target.value }) } } />
+                        <br />
 
-                    <TextField hintText="Phone" floatingLabelText="Phone" floatingLabelFixed={true} value={this.state.phone} onChange={ (e) => { this.setState({ phone: e.target.value }) } } />
-                    <br />
+                        <TextField hintText="Phone" floatingLabelText="Phone" floatingLabelFixed={true} value={this.state.phone} onChange={ (e) => { this.setState({ phone: e.target.value }) } } />
+                        <br />
 
-                    <RaisedButton label="SUBMIT" primary={true} buttonStyle={myColor} onClick={ senEmail } />
-                    <br/><br/>
+                        <RaisedButton label="SUBMIT" primary={true} buttonStyle={myColor} onClick={ senEmail } />
+                        <br/><br/>
+                    </div>
                 </div>
 
                 <br/>
