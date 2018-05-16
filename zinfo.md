@@ -1,5 +1,12 @@
 # Developer Notes.
 
+From Mikel North:
+to send the Email:
+https://formspree.io/
+
+
+
+
 Color Themes:
 http://paletton.com/#uid=14e0u0kllllqa1NnLbziVv7gwVF
 
